@@ -57,6 +57,7 @@ int main()
     //fonskiyon çağrıları
     merhaba_de(5);
     merhaba_de(2);
+    merhaba_de(3);
 
     int sonuc=ebob(345,150);
     printf("%d\n",sonuc);
