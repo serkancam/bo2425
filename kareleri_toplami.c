@@ -4,10 +4,21 @@
 
 int basamak_topla(int sayi)
 {
-    int donecek;
+    int donecek=0;
     while (sayi != 0)
     {
         donecek = donecek + (sayi % 10); // donecek+=sayi%10
+        sayi /= 10;                      // sayi=sayi/10
+    }
+    return donecek;
+}
+int basamak_kareleri_topla(int sayi)
+{
+    int donecek=0;
+    while (sayi != 0)
+    {
+        
+        donecek = donecek + (sayi % 10)*(sayi % 10); // donecek+=sayi%10
         sayi /= 10;                      // sayi=sayi/10
     }
     return donecek;
